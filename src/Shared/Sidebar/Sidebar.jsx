@@ -7,6 +7,7 @@ import { AiOutlineRobot, AiOutlineCode, AiOutlineBgColors, AiOutlineSound, AiOut
 import { FaRobot, FaPenFancy, FaPaintBrush, FaRegClock, FaBalanceScale, FaKey, FaLock, FaQrcode, FaIdBadge, FaCalendarAlt, FaCode, FaPalette, FaFillDrip, FaGuitar, FaMusic, FaCalculator, FaPiggyBank, FaGamepad, FaMagic, FaBook } from "react-icons/fa";
 
 import { IoGameControllerOutline } from "react-icons/io5"
+import { SiGitignoredotio } from "react-icons/si";
 
 export default function Sidebar() {
     const [open, setOpen] = useState(true);
@@ -52,6 +53,7 @@ export default function Sidebar() {
             name: "Development",
             icon: <AiOutlineCode size={20} />,
             items: [
+                { name: "Git Ignore", icon: <SiGitignoredotio size={18} />, route: "/git_ignore" },
                 { name: "UUID Generator", icon: <FaIdBadge size={18} />, route: "/uuidgenerator" },
                 { name: "Epoch Timestamp", icon: <FaCalendarAlt size={18} />, route: "/epochtimestamp" },
                 { name: "JSON Formatter", icon: <FaCode size={18} />, route: "/jsonformatter" },

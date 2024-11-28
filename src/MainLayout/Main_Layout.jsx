@@ -17,7 +17,7 @@ export default function Main_Layout() {
                 <div className=' lg:block hidden '>
                     <Header />
                 </div>
-                <div className='py-2 px-3 lg:mt-4 '>
+                <div className='py-2 px-3 lg:mt-20 '>
                     {/* Outlet for rendering nested routes */}
                     <Outlet />
                 </div>
